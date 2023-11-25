@@ -70,8 +70,10 @@ exit
                       @call "%VS120COMNTOOLS%\..\..\VC\bin\x86_amd64\vcvarsx86_amd64.bat"
             ) else if exist "%ProgramFiles(x86)%\microsoft visual studio\2017\community\VC\Auxiliary\Build\vcvarsx86_amd64.bat" (
                       @call "%ProgramFiles(x86)%\microsoft visual studio\2017\community\VC\Auxiliary\Build\vcvarsx86_amd64.bat"
+            ) else if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsx86_amd64.bat" (
+                      @call "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsx86_amd64.bat"
             ) else (
-                echo Error: Could not find x64 environment variables for Visual Studio 2017/2015/2013
+                echo Error: Could not find x64 environment variables for Visual Studio 2017/2015/2013/2022
                 goto error
             )
             set Platform=x64

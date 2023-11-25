@@ -1,4 +1,4 @@
-void imgui_pangram() {
+﻿void imgui_pangram() {
     // pangrams & utf8 samplers
     // [src] http://clagnut.com/blog/2380/
     // [src] https://elinux.org/UTF8_Sampler
